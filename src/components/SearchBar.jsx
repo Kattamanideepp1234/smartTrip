@@ -1,9 +1,15 @@
+import Coorg from "../assets/Coorg.png";
+import Munnar from "../assets/Munnar.png";
+import Ooty from "../assets/Ooty.png";
+import Lehladhak from "../assets/Lehladhak.png";
+import Goa from "../assets/Goa.png"
+
 const suggestions = [
-  { name: "Coorg", img: "https://source.unsplash.com/400x250/?coorg,coffee" },
-  { name: "Munnar", img: "https://source.unsplash.com/400x250/?munnar,tea" },
-  { name: "Ooty", img: "https://source.unsplash.com/400x250/?ooty,hills" },
-  { name: "Leh-Ladakh", img: "https://source.unsplash.com/400x250/?leh-ladakh" },
-  { name: "Goa", img: "https://source.unsplash.com/400x250/?goa,beach" },
+  { name: "Coorg", img: Coorg},
+  { name: "Munnar", img: Munnar },
+  { name: "Ooty", img: Ooty },
+  { name: "Leh-Ladakh", img: Lehladhak },
+  { name: "Goa", img: Goa },
 ];
 
 function SearchBar({ onSelect }) {
@@ -21,7 +27,7 @@ function SearchBar({ onSelect }) {
             onClick={() => onSelect(place.name)}
             className="cursor-pointer rounded-lg overflow-hidden shadow hover:scale-105 transition"
           >
-            <img src={place.img} alt={place.name} className="w-full h-32 object-cover" />
+            <img src={place.img} alt={place.name} className="w-full h-20 object-cover rounded-t-lg" />
             <div className="p-2 text-center font-semibold">{place.name}</div>
           </div>
         ))}

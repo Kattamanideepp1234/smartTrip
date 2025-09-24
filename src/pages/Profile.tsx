@@ -15,17 +15,17 @@ import {
 
 const Profile = () => {
   const stats = [
-    { label: "Trips Completed", value: "12", icon: MapPin },
-    { label: "Countries Visited", value: "8", icon: Calendar },
-    { label: "Eco Points", value: "2,456", icon: Leaf },
-    { label: "Community Likes", value: "189", icon: Heart }
+    { label: "Trips Completed", value: "18", icon: MapPin },
+    { label: "States Visited", value: "7", icon: Calendar },
+    { label: "Eco Points", value: "3,210", icon: Leaf },
+    { label: "Community Likes", value: "254", icon: Heart }
   ];
 
   const achievements = [
-    { title: "Eco Warrior", description: "Completed 5 sustainable trips", earned: true },
-    { title: "Cultural Explorer", description: "Visited 3 UNESCO sites", earned: true },
-    { title: "Local Champion", description: "Supported 10 local businesses", earned: false },
-    { title: "Adventure Seeker", description: "Completed extreme activities", earned: true }
+    { title: "Eco Warrior", description: "Completed 5 eco-friendly treks", earned: true },
+    { title: "Temple Explorer", description: "Visited 10 historic temples", earned: true },
+    { title: "Local Champion", description: "Supported 15 local homestays", earned: false },
+    { title: "Spice Trail Seeker", description: "Explored Kerala spice plantations", earned: true }
   ];
 
   return (
@@ -39,12 +39,12 @@ const Profile = () => {
                 <div className="w-24 h-24 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4">
                   <User className="w-12 h-12 text-white" />
                 </div>
-                <h2 className="text-2xl font-bold mb-1">Alex Thompson</h2>
-                <p className="text-muted-foreground mb-4">Eco-Adventure Enthusiast</p>
+                <h2 className="text-2xl font-bold mb-1">Arjun Ramesh</h2>
+                <p className="text-muted-foreground mb-4">South India Travel Enthusiast</p>
                 
                 <div className="flex justify-center space-x-2 mb-4">
                   <Badge variant="secondary">Verified Traveler</Badge>
-                  <Badge className="bg-accent text-accent-foreground">Level 3</Badge>
+                  <Badge className="bg-accent text-accent-foreground">Level 4</Badge>
                 </div>
                 
                 <Button variant="outline" className="w-full">
@@ -119,9 +119,9 @@ const Profile = () => {
               <CardContent>
                 <div className="space-y-4">
                   {[
-                    { title: "Northern Italy Road Trip", status: "Saved", date: "Summer 2024" },
-                    { title: "Japan Cultural Journey", status: "Completed", date: "Spring 2024" },
-                    { title: "Patagonia Adventure", status: "Planning", date: "Fall 2024" }
+                    { title: "Coorg Coffee Trails", status: "Saved", date: "Winter 2024" },
+                    { title: "Kerala Backwaters", status: "Completed", date: "Monsoon 2024" },
+                    { title: "Hampi Heritage Walk", status: "Planning", date: "Summer 2025" }
                   ].map((trip) => (
                     <div key={trip.title} className="flex items-center justify-between p-4 border border-border rounded-lg">
                       <div>
@@ -150,7 +150,7 @@ const Profile = () => {
                   <div>
                     <h4 className="font-medium mb-2">Preferred Travel Style</h4>
                     <div className="flex flex-wrap gap-2">
-                      {['Eco-Tourism', 'Adventure', 'Cultural', 'Photography'].map((style) => (
+                      {['Eco-Tourism', 'Temple Visits', 'Trekking', 'Food Trails'].map((style) => (
                         <Badge key={style} variant="secondary">
                           {style}
                         </Badge>
@@ -160,7 +160,7 @@ const Profile = () => {
                   
                   <div>
                     <h4 className="font-medium mb-2">Budget Range</h4>
-                    <Badge variant="outline">$1,000 - $3,000</Badge>
+                    <Badge variant="outline">₹20,000 - ₹60,000</Badge>
                   </div>
                   
                   <div>

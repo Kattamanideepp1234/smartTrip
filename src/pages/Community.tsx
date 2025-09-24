@@ -8,40 +8,53 @@ const Community = () => {
   const posts = [
     {
       id: 1,
-      author: "Sarah Chen",
-      location: "Banff National Park",
-      content: "Just finished an incredible 5-day eco-hike through the Canadian Rockies! The sustainable lodges were amazing.",
-      image: "🏔️",
-      likes: 24,
-      comments: 8,
-      tags: ["Eco-Tourism", "Hiking", "Canada"]
+      author: "Priya Menon",
+      location: "Munnar, Kerala",
+      content: "Spent the weekend exploring tea plantations in Munnar 🌿. The misty hills and homestays made it magical!",
+      image: "🍃",
+      likes: 42,
+      comments: 15,
+      tags: ["Eco-Tourism", "Tea Gardens", "Kerala"]
     },
     {
       id: 2,
-      author: "Miguel Rodriguez",
-      location: "Costa Rica",
-      content: "Local tip: Visit the coffee farms in Monteverde for an authentic sustainable tourism experience!",
+      author: "Rahul Iyer",
+      location: "Hampi, Karnataka",
+      content: "If you love history, Hampi is a must! The ruins, temples, and sunrise from Matanga Hill were unforgettable.",
+      image: "🏯",
+      likes: 36,
+      comments: 22,
+      tags: ["Heritage", "History", "South India"]
+    },
+    {
+      id: 3,
+      author: "Divya Reddy",
+      location: "Coorg, Karnataka",
+      content: "Coffee plantation stay in Coorg ☕🌲 Highly recommend for those who love nature and peace.",
       image: "☕",
-      likes: 18,
-      comments: 12,
-      tags: ["Local Tips", "Sustainable", "Coffee"]
+      likes: 29,
+      comments: 10,
+      tags: ["Coffee Trails", "Homestay", "Nature"]
     }
   ];
 
   return (
     <div className="min-h-screen pt-8 pb-16">
       <div className="container mx-auto px-4">
+        {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Travel Community
+            South India Travel Community
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Connect with fellow travelers and locals to share experiences and discover hidden gems
+            Share your journeys across Kerala, Karnataka, Tamil Nadu, Andhra, and beyond. Discover tips, hidden gems, and sustainable travel ideas.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
+          {/* Main Feed */}
           <div className="lg:col-span-2">
+            {/* Create Post */}
             <Card className="mb-6">
               <CardHeader>
                 <CardTitle>Share Your Experience</CardTitle>
@@ -50,7 +63,7 @@ const Community = () => {
                 <div className="space-y-4">
                   <div className="p-4 border border-dashed border-border rounded-lg text-center">
                     <Camera className="w-8 h-8 text-muted-foreground mx-auto mb-2" />
-                    <p className="text-muted-foreground">Share photos and stories from your travels</p>
+                    <p className="text-muted-foreground">Share photos and stories from your South Indian travels</p>
                   </div>
                   <Button variant="hero" className="w-full">
                     Create Post
@@ -59,6 +72,7 @@ const Community = () => {
               </CardContent>
             </Card>
 
+            {/* Posts */}
             <div className="space-y-6">
               {posts.map((post) => (
                 <Card key={post.id} className="overflow-hidden">
@@ -108,6 +122,7 @@ const Community = () => {
             </div>
           </div>
 
+          {/* Sidebar */}
           <div className="lg:col-span-1">
             <Card className="mb-6">
               <CardHeader>
@@ -116,15 +131,15 @@ const Community = () => {
               <CardContent className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span>Active Travelers</span>
-                  <span className="font-bold text-primary">2,847</span>
+                  <span className="font-bold text-primary">5,432</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span>Shared Experiences</span>
-                  <span className="font-bold text-accent">1,234</span>
+                  <span>Shared Stories</span>
+                  <span className="font-bold text-accent">2,018</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span>Eco Points Earned</span>
-                  <span className="font-bold text-secondary">45,678</span>
+                  <span className="font-bold text-secondary">76,342</span>
                 </div>
               </CardContent>
             </Card>
@@ -138,8 +153,8 @@ const Community = () => {
                   <div className="w-16 h-16 bg-gradient-nature rounded-full flex items-center justify-center mx-auto mb-3">
                     <Users className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="font-semibold">Maria González</h3>
-                  <p className="text-sm text-muted-foreground mb-3">Local Guide, Costa Rica</p>
+                  <h3 className="font-semibold">Suresh Kumar</h3>
+                  <p className="text-sm text-muted-foreground mb-3">Local Guide, Kerala Backwaters</p>
                   <Button variant="outline" size="sm">Connect</Button>
                 </div>
               </CardContent>
