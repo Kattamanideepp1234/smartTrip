@@ -5,6 +5,11 @@ import { Clock, MapPin } from 'lucide-react';
 import Coorgday1 from "../../assets/Abbey.png";
 import Coorgday2 from "../../assets/Rajas.png";
 import Coorgday3 from "../../assets/Elephant.png";
+import Periyarday1 from "../../assets/periyar.png";
+import Periyarday2 from "../../assets/boat.png";
+import Periyarday3 from "../../assets/village.png";
+import Chikmagalur from "../../assets/westernghats.png";
+import Chikmagalurday2 from "../../assets/coffeetrees.png";
 
 const tripData = {
   1: {
@@ -31,9 +36,9 @@ const tripData = {
     dates: "Nov 12-15, 2025",
     budget: "₹30,000",
     days: [
-      { day: 1, activities: ["Periyar Wildlife Sanctuary visit"], image: "https://source.unsplash.com/400x250/?periyar,forest" },
-      { day: 2, activities: ["Boating at Periyar Lake", "Bamboo rafting"], image: "https://source.unsplash.com/400x250/?periyar,lake" },
-      { day: 3, activities: ["Local village exploration"], image: "https://source.unsplash.com/400x250/?periyar,village" },
+      { day: 1, activities: ["Periyar Wildlife Sanctuary visit"], image: Periyarday1 },
+      { day: 2, activities: ["Boating at Periyar Lake", "Bamboo rafting"], image: Periyarday2 },
+      { day: 3, activities: ["Local village exploration"], image: Periyarday3 },
     ],
     food: "Traditional Kerala dishes and riverbank snacks",
     lodging: "Eco-lodges and treehouses",
@@ -44,8 +49,8 @@ const tripData = {
     dates: "Dec 1-3, 2025",
     budget: "₹20,000",
     days: [
-      { day: 1, activities: ["Trekking in Western Ghats", "Sunset viewpoint"], image: "https://source.unsplash.com/400x250/?chikmagalur,hills" },
-      { day: 2, activities: ["Coffee estate tour", "Local café visits"], image: "https://source.unsplash.com/400x250/?chikmagalur,coffee" },
+      { day: 1, activities: ["Trekking in Western Ghats", "Sunset viewpoint"], image: Chikmagalur },
+      { day: 2, activities: ["Coffee estate tour", "Local café visits"], image: Chikmagalurday2 },
     ],
     food: "South Indian cuisine and coffee tasting",
     lodging: "Boutique resorts and homestays",

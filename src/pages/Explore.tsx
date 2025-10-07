@@ -63,7 +63,7 @@ const Explore = () => {
 
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Filters Sidebar */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 flex flex-col">
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
@@ -100,22 +100,6 @@ const Explore = () => {
                 </div>
               </CardContent>
             </Card>
-          </div>
-
-          {/* Map and Results */}
-          <div className="lg:col-span-2">
-            <Card className="mb-6">
-              <CardContent className="p-0">
-                <div className="h-96 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <Compass className="w-16 h-16 text-primary mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold mb-2">Interactive Map Coming Soon</h3>
-                    <p className="text-muted-foreground">Explore South Indian destinations with our smart map interface</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
             <div className="space-y-4">
               <h3 className="text-2xl font-bold">Featured Destinations</h3>
               <div className="grid md:grid-cols-2 gap-4">
@@ -143,6 +127,23 @@ const Explore = () => {
                 )}
               </div>
             </div>
+          </div>
+
+          {/* Map and Results */}
+          <div className="lg:col-span-2">
+            <Card className="mb-6">
+              <CardContent className="p-0">
+                <div className="h-96 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center">
+                  <div className="text-center">
+                    <Compass className="w-16 h-16 text-primary mx-auto mb-4" />
+                    <h3 className="text-xl font-semibold mb-2">Interactive Map Coming Soon</h3>
+                    <p className="text-muted-foreground">Explore South Indian destinations with our smart map interface</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            
           </div>
         </div>
       </div>
